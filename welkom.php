@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    $user = $_SESSION["user"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +16,7 @@
         <h1>Welcome to Gemorskos</h1>
         <p>You have successfully logged in as <span id="user-role">
             <?php 
-                $role = isset($_GET['role']) ? htmlspecialchars($_GET['role']) : 'Guest';
-                echo $role; 
+                echo $user;
             ?>
         </span>.</p>
         <form method="POST" action="inloggen.php">

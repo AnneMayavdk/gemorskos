@@ -10,7 +10,7 @@
     <div class="login-container">
         <h1>Welcome to Gemorskos</h1>
 
-        <form method="POST" action="">
+        <form method="POST" action="authenticate.php">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
 
